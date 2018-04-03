@@ -10,6 +10,15 @@ $(window).on('beforeunload', function(){
       // $fn.scrollSpeed(step, speed, easing);
       jQuery.scrollSpeed(100, 1000);
 
+        var screenright = $(window).width()-$('.pagewrap').width();
+        $('nav').css('right',screenright/2+'px');
+
+        $(window).resize(function(){
+            var screenright = $(window).width()-$('.pagewrap').width();
+            $('nav').css('right',screenright/2+'px');
+    
+        })
+
           $('.iconoMenu').click(function(){
               $(this).toggleClass('open');
               $('.nav').toggleClass('hideMenu');
