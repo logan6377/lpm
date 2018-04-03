@@ -298,6 +298,7 @@ li.nav-logo{
 }
 .nav.hideMenu{
     right: -263px; 
+    opacity: 0;
 }
 .nav>li {
     text-align: right;
