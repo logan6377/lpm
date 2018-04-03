@@ -12,6 +12,7 @@ $(window).on('beforeunload', function(){
 
           $('.iconoMenu').click(function(){
               $(this).toggleClass('open');
+              $('.nav').toggleClass('hideMenu');
           }); 
               
           $('.parallax-container').height($(window).height())
@@ -20,12 +21,14 @@ $(window).on('beforeunload', function(){
           window.sr = ScrollReveal();
           sr.reveal('.parallax', { origin: 'top', scale: 1, duration: 2000, distance:'0px' }, 50); 
           
+          sr.reveal('.pov-headline', { origin: 'right', scale: 1, duration: 2500, distance:'500px', delay: 1500 }, 50);
           sr.reveal('nav', { origin: 'right', scale: 1, duration: 2000, distance:'250px', delay: 3000 }, 50);
+
           sr.reveal('nav li', { origin: 'right', scale: 1, duration: 2000, distance:'250px', delay: 3000 }, 200);
           sr.reveal('.top-logo', { origin: 'bottom', scale: 1, duration: 2000, delay: 3000 }, 500);
 
-          sr.reveal('.pov-headline h1', { origin: 'bottom', scale: 1, duration: 2500, distance:'100px', delay: 1500 }, 50);
-          sr.reveal('.pov-headline h1 span', { origin: 'bottom', scale: 1, duration: 2500, distance:'100px', delay: 1500 }, 150);
+          sr.reveal('.pov-headline h1', { origin: 'bottom', scale: 1, duration: 2500, distance:'100px', delay: 4000 }, 50);
+          sr.reveal('.pov-headline h1 span', { origin: 'bottom', scale: 1, duration: 2500, distance:'100px', delay: 4000 }, 150);
           sr.reveal('.get-app', { origin: 'bottom', scale: 1, duration: 2000, distance:'100px', delay: 2500 }, 250);
           //sr.reveal('.page-content', { origin: 'bottom', scale: 1, duration: 2000, distance:'150px', delay: 100 }, 250)
 
