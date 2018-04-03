@@ -6,18 +6,23 @@ $(window).on('beforeunload', function(){
 
   /* Smooth Scroll */
 
+  var intro = function(){
+    var screenright = $(window).width()-$('.pagewrap').width();
+    $('nav').css('right',screenright/2+'px');
+
+    var testi = $('[testi-slide]').height();
+    $('.testimonials').css('margin-top',-testi+'px')
+  }
+
   $(document).ready(function(){
       // $fn.scrollSpeed(step, speed, easing);
       jQuery.scrollSpeed(100, 1000);
 
-        var screenright = $(window).width()-$('.pagewrap').width();
-        $('nav').css('right',screenright/2+'px');
+      intro()
 
         $(window).resize(function(){
-            var screenright = $(window).width()-$('.pagewrap').width();
-            $('nav').css('right',screenright/2+'px');
-    
-        })
+            intro();
+        });
 
           $('.iconoMenu').click(function(){
               $(this).toggleClass('open');
