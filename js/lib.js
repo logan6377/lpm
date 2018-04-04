@@ -16,7 +16,7 @@ $(window).on('beforeunload', function(){
 
   $(document).ready(function(){
       // $fn.scrollSpeed(step, speed, easing);
-      jQuery.scrollSpeed(100, 1000);
+      //jQuery.scrollSpeed(100, 1000);
 
       intro()
 
@@ -29,8 +29,7 @@ $(window).on('beforeunload', function(){
               $('.nav').toggleClass('hideMenu');
           }); 
               
-          $('.parallax-container').height($(window).height())
-          $('.parallax').parallax();
+          $('.pov').height($(window).height()) 
 
           window.sr = ScrollReveal();
           sr.reveal('.parallax', { origin: 'top', scale: 1, duration: 2000, distance:'0px' }, 50); 
@@ -48,19 +47,17 @@ $(window).on('beforeunload', function(){
 
           sr.reveal('.nav-services li', { origin: 'bottom', opacity:1, scale: 1, duration: 2000, distance:'100px', delay: 200 }, 50);
           
- 
 
-          /* $(window).scroll(function(){
+          sr.reveal('[testi-slide]', { origin: 'bottom', opacity:1, scale: 1, duration: 2000, distance:'100px',  }, 50);
+
+          $(window).scroll(function(){
               if(scrollFirst){
 
-                  $('html, body').animate({scrollTop:$('.content-section').offset().top}, 1000,
-                  function(){
-                      //jQuery.scrollSpeed(100, 1000);
-                  })
+                  $('html, body').animate({scrollTop:$('.content-section').offset().top}, 1000)
   
                   scrollFirst = false
               }
-          }) */
+          })
 
           jQuery(".testimonial-slider").slick({
             infinite:true,

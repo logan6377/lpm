@@ -12,6 +12,7 @@
 body{
     background: #FFF;
     height: 100%;
+    overflow-x: hidden;
 }
 html, body { height: 100%; }
 
@@ -349,6 +350,8 @@ li.nav-logo{
 .pov { 
     /* transform: translateY(-100%);
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) */
+    position: relative;
+    overflow: hidden;
 }
  
 

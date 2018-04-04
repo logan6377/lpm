@@ -5,9 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
-<link rel="stylesheet" href="css/slick-1.6.0.min.css">
- <!-- Compiled and minified CSS -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="css/slick-1.6.0.min.css"> 
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -68,13 +66,13 @@
         <div class="pov-img-container ">
             <div class="parallax"> <img src="img/pov-1.jpg" alt=""></div>
         </div>
-        <div class="pov-headline ">
-            <h1>India’s Number 1 <br> <b>Best Dental Hospital</b><span>Commited to Excellence</span></h1> 
+        <div class="pov-headline " data-0="width:50%" data-1000="width:100%">
+            <h1 data-0="margin-top:0px" data-end="margin-top:-250px">India’s Number 1 <br> <b>Best Dental Hospital</b><span>Commited to Excellence</span></h1> 
             <!-- <a href="javascript:;" class="get-app">Get the Appointment today</a> -->  
         </div>        
     </div>
     <!-- pov ends -->
-    <div class="content-section">
+    <div class="content-section" data-0="background-position:0px 0px" data-end="background-position:-100px 0px">
     <div class="container " data-sr-id>
         <div class="page-content">
             <!-- home content-->
@@ -155,7 +153,7 @@
                     </li>                  
                 </ul>
                 <!-- services nav ends -->
-                <div class="home-article">
+                <div class="home-article" data-300="opacity:0;padding-top:120px;" data-800="opacity:1;padding-top:0px;">
                     <img src="img/ttile-service.png">
                     <h2 class="article-title">SMILE DESIGN</h2>
                     <p>Your smile is the first impression you give to people. And we design it to be the best.</p>
@@ -290,8 +288,11 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="js/slick-1.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+<script src="js/slick-1.6.0.min.js"></script>  
+<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init({forceHeight: false});
+	</script>
 <script src="js/lib.js"></script>
 </body>
 
