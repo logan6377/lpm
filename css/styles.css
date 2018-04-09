@@ -428,6 +428,70 @@ li.nav-logo{
     background-color: rgba(255, 255, 255, 0.5)
 }
 
+.get-appgroup{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 57%;
+    position: relative;
+}
+.get-appgroup *{
+    transition: all 0.3s ease
+}
+.app-text {
+    background: #FFF;
+    padding: 12px 30px 12px 10px;
+    display: inline-block;
+    font-size: 24px;
+    width: 73%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.call-text {
+    background: #000;
+    color: #FFF;
+    display: inline-block;
+    border-radius: 0 27px 27px 0;
+    padding: 12px 22px 12px 20px;
+    font-size: 24px;
+    width: 27%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.number-text{
+    padding-left: 40px
+}
+.get-appgroup:after {
+    position: absolute;
+    content: 'or';
+    background: #FFF;
+    border-radius: 100%;
+    padding: 0px 0px;
+    color: #000;
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    left: 70%; 
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    top: 24%;
+    transition: all 0.3s ease
+}
+
+.get-appgroup:hover .app-text{
+     width: 0;
+     padding: 12px 0px 12px 0px
+}
+
+.get-appgroup:hover .call-text{
+    width: 90%
+}
+.get-appgroup:hover:after{
+    left: -10%;
+}
 .btn-row {
     padding: 20px 0 0
 }
