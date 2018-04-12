@@ -81,6 +81,14 @@ $(window).on('beforeunload', function(){
             speed:1500,
             arrows:false,
             pauseOnHover:false
+        });
+
+        $('.nav-services li').click(function(){
+            var current = $(this).attr('class').split(' ')[0];
+            $('.nav-services li').removeClass('active')
+            $(this).addClass('active')
+            $('.service-container > div').hide();
+            $('.service-container > div.'+current).show();
         })
            
   });

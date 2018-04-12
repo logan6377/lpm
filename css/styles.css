@@ -543,19 +543,45 @@ li.nav-logo{
     text-align: center;
     border: 1px solid #d9d9d9;
     cursor: pointer;
-    background: #FFFF;
-}
+    background: url(../img/s-menu.jpg) no-repeat;
+    width: 135px;
+    height: 135px;
+} 
 
-.nav-services>li>a {
-    font-size: 15px;
-    font-weight: 400;
-    color: #424242;
-    display: block;
-    padding: 15px 5px;
-}
+.nav-services>li.s-menu-sd{ background-position: 0 0}
+.nav-services>li:hover.s-menu-sd, .nav-services>li.s-menu-sd.active{ background-position: -407px 0} 
+.nav-services>li.s-menu-v{ background-position: -136px 0} 
+.nav-services>li:hover.s-menu-v, .nav-services>li.s-menu-v.active{ background-position: -543px 0} 
+.nav-services>li.s-menu-tw{ background-position: -271px 0}
+.nav-services>li:hover.s-menu-tw, .nav-services>li.s-menu-tw.active{ background-position: -679px 0}
+
+.nav-services>li.s-menu-en{ background-position: 0 -135px}
+.nav-services>li:hover.s-menu-en, .nav-services>li.s-menu-en.active{ background-position: -407px -135px}
+.nav-services>li.s-menu-dcb{ background-position: -136px -135px}
+.nav-services>li:hover.s-menu-dcb,.nav-services>li.s-menu-dcb.active{ background-position: -543px -135px}
+.nav-services>li.s-menu-ld{ background-position: -271px -135px}
+.nav-services>li:hover.s-menu-ld, .nav-services>li.s-menu-ld.active{ background-position: -679px -135px}
+
+.nav-services>li.s-menu-al{ background-position: 0 -272px}
+.nav-services>li:hover.s-menu-al, .nav-services>li.s-menu-al.active{ background-position: -407px -272px}
+.nav-services>li.s-menu-di{ background-position: -136px -272px}
+.nav-services>li:hover.s-menu-di, .nav-services>li.s-menu-di.active{ background-position: -543px -272px}
+.nav-services>li.s-menu-or{ background-position: -271px -272px}
+.nav-services>li:hover.s-menu-or, .nav-services>li.s-menu-or.active{ background-position: -679px -272px}
+
+.nav-services>li.s-menu-gp{ background-position: 0 -406px}
+.nav-services>li:hover.s-menu-gp, .nav-services>li.s-menu-gp.active{ background-position: -407px -406px}
+.nav-services>li.s-menu-cd{ background-position: -136px -406px}
+.nav-services>li:hover.s-menu-cd, .nav-services>li.s-menu-cd.active{ background-position: -543px -406px}
+.nav-services>li.s-menu-sed { background-position: -271px -406px}
+.nav-services>li:hover.s-menu-sed, .nav-services>li.s-menu-sed.active { background-position: -679px -406px}
 
 .nav-services>li:hover {
     background-color: #e31e25;
+}
+
+.service-container > div{
+    display: none
 }
 
 .nav-services>li:hover span, .nav-services>li>a:hover span {
