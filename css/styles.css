@@ -82,6 +82,10 @@ nav ul a{
     
 }
 
+.pagewrap .se-pre-con{
+    display: none
+}
+
 .se-pre-con {
     position: fixed;
     left: 0px;
@@ -96,7 +100,7 @@ nav ul a{
     opacity: 1 !important
 }
 
-.pagewrap.loaded .se-pre-con{
+.se-pre-con.loaded{
     display: none
 }
 

@@ -15,7 +15,7 @@ $(window).on('beforeunload', function(){
                 // now all images are loaded.
                 alert("all images are loaded. Click OK to view.") ;
 
-                $('.pagewrap').addClass('loaded');
+                $('.pagewrap, .se-pre-con').addClass('loaded');
 
                 var scrollFirst = true;
 
