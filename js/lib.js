@@ -13,9 +13,9 @@ $(window).on('beforeunload', function(){
             images_loaded++;
             if (images_loaded >= total_images) {
                 // now all images are loaded.
-                alert("all images are loaded. Click OK to view.") ;
-
-                $('.pagewrap, .se-pre-con').addClass('loaded');
+                //alert("all images are loaded. Click OK to view.") ;
+                $('.se-pre-con').addClass('loaded');
+                $('.pagewrap').addClass('loaded');
 
                 var scrollFirst = true;
 
