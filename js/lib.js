@@ -17,9 +17,13 @@ $(window).on('beforeunload', function(){
                 $('.se-pre-con').addClass('loaded');
                 $('.pagewrap').addClass('loaded');
 
-                var scrollFirst = true;
+                $('.call-text').mouseenter(function(){
+                    $('.get-appgroup').addClass('hover')
+                }).mouseleave(function(){
+                    $('.get-appgroup').removeClass('hover')
+                })
 
-                /* Smooth Scroll */
+                var scrollFirst = true; 
 
                 var intro = function(){
                     var screenright = $(window).width()-$('.pagewrap').width();
@@ -40,7 +44,7 @@ $(window).on('beforeunload', function(){
                     $('.nav').toggleClass('hideMenu');
                 }); 
                     
-                $('.parallax-container').height($(window).height()-50) 
+                $('.parallax-container').height($(window).height()) 
       
                 window.sr = ScrollReveal();
                 sr.reveal('.pov-img-container', { origin: 'top', scale: 1, duration: 2000, distance:'0px' }, 50); 

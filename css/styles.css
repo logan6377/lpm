@@ -240,7 +240,8 @@ nav ul a{
     top: 25px;
 } */
 .hamburger{
-    padding-top:4px 
+    padding-top: 7px;
+    padding-left: 1px;
 }
 .iconoMenu > div{
     -webkit-transition: all 0.3s;
@@ -383,7 +384,8 @@ li.nav-logo{
 }
 
 .pov-img-container {
-    max-width: 100%; 
+    max-width: 100%;
+    height: 100%
 }
 
 .pov-img-container>img {
@@ -483,6 +485,7 @@ li.nav-logo{
     position: relative;
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
 }
 .number-text{
     padding-left: 40px
@@ -504,15 +507,15 @@ li.nav-logo{
     transition: all 0.3s ease
 }
 
-.get-appgroup:hover .app-text{
+.get-appgroup.hover .app-text{
      width: 0;
      padding: 12px 0px 12px 0px
 }
 
-.get-appgroup:hover .call-text{
-    width: 90%
+.get-appgroup.hover .call-text{
+    width: 100%
 }
-.get-appgroup:hover:after{
+.get-appgroup.hover:after{
     left: -10%;
 }
 .btn-row {
@@ -533,8 +536,7 @@ li.nav-logo{
     max-width: 1100px;
     margin: auto
 } 
-.content-section{   
-    background: url(../img/content-bg.jpg) no-repeat top center;
+.content-section{    
     padding: 8% 0 280px 0;
 }
 .page-content{
@@ -568,36 +570,37 @@ li.nav-logo{
     cursor: pointer;
     background: url(../img/s-menu.jpg) no-repeat;
     width: 135px;
-    height: 135px;
+    height: 134px;
+    transition: all 0.3s ease-out
 } 
 
 .nav-services>li.s-menu-sd{ background-position: 0 0}
-.nav-services>li:hover.s-menu-sd, .nav-services>li.s-menu-sd.active{ background-position: -407px 0} 
+.nav-services>li:hover.s-menu-sd, .nav-services>li.s-menu-sd.active{ background-position: 0 -136px} 
 .nav-services>li.s-menu-v{ background-position: -136px 0} 
-.nav-services>li:hover.s-menu-v, .nav-services>li.s-menu-v.active{ background-position: -543px 0} 
+.nav-services>li:hover.s-menu-v, .nav-services>li.s-menu-v.active{ background-position: -136px -136px} 
 .nav-services>li.s-menu-tw{ background-position: -271px 0}
-.nav-services>li:hover.s-menu-tw, .nav-services>li.s-menu-tw.active{ background-position: -679px 0}
+.nav-services>li:hover.s-menu-tw, .nav-services>li.s-menu-tw.active{ background-position: -271px -136px}
 
-.nav-services>li.s-menu-en{ background-position: 0 -135px}
-.nav-services>li:hover.s-menu-en, .nav-services>li.s-menu-en.active{ background-position: -407px -135px}
-.nav-services>li.s-menu-dcb{ background-position: -136px -135px}
-.nav-services>li:hover.s-menu-dcb,.nav-services>li.s-menu-dcb.active{ background-position: -543px -135px}
-.nav-services>li.s-menu-ld{ background-position: -271px -135px}
-.nav-services>li:hover.s-menu-ld, .nav-services>li.s-menu-ld.active{ background-position: -679px -135px}
+.nav-services>li.s-menu-en{ background-position: 0 -272px}
+.nav-services>li:hover.s-menu-en, .nav-services>li.s-menu-en.active{ background-position: 0 -409px}
+.nav-services>li.s-menu-dcb{ background-position: -136px -272px}
+.nav-services>li:hover.s-menu-dcb,.nav-services>li.s-menu-dcb.active{ background-position: -136px -409px}
+.nav-services>li.s-menu-ld{ background-position: -271px -272px}
+.nav-services>li:hover.s-menu-ld, .nav-services>li.s-menu-ld.active{ background-position: -271px -409px}
 
-.nav-services>li.s-menu-al{ background-position: 0 -272px}
-.nav-services>li:hover.s-menu-al, .nav-services>li.s-menu-al.active{ background-position: -407px -272px}
-.nav-services>li.s-menu-di{ background-position: -136px -272px}
-.nav-services>li:hover.s-menu-di, .nav-services>li.s-menu-di.active{ background-position: -543px -272px}
-.nav-services>li.s-menu-or{ background-position: -271px -272px}
-.nav-services>li:hover.s-menu-or, .nav-services>li.s-menu-or.active{ background-position: -679px -272px}
+.nav-services>li.s-menu-al{ background-position: 0 -545px}
+.nav-services>li:hover.s-menu-al, .nav-services>li.s-menu-al.active{ background-position: 0px -680px}
+.nav-services>li.s-menu-di{ background-position: -136px -545px}
+.nav-services>li:hover.s-menu-di, .nav-services>li.s-menu-di.active{ background-position: -136px -680px}
+.nav-services>li.s-menu-or{ background-position: -271px -545px}
+.nav-services>li:hover.s-menu-or, .nav-services>li.s-menu-or.active{ background-position: -271px -680px}
 
-.nav-services>li.s-menu-gp{ background-position: 0 -406px}
-.nav-services>li:hover.s-menu-gp, .nav-services>li.s-menu-gp.active{ background-position: -407px -406px}
-.nav-services>li.s-menu-cd{ background-position: -136px -406px}
-.nav-services>li:hover.s-menu-cd, .nav-services>li.s-menu-cd.active{ background-position: -543px -406px}
-.nav-services>li.s-menu-sed { background-position: -271px -406px}
-.nav-services>li:hover.s-menu-sed, .nav-services>li.s-menu-sed.active { background-position: -679px -406px}
+.nav-services>li.s-menu-gp{ background-position: 0 -813px}
+.nav-services>li:hover.s-menu-gp, .nav-services>li.s-menu-gp.active{ background-position: 0px -952px}
+.nav-services>li.s-menu-cd{ background-position: -136px -813px}
+.nav-services>li:hover.s-menu-cd, .nav-services>li.s-menu-cd.active{ background-position: -136px -952px}
+.nav-services>li.s-menu-sed { background-position: -271px -813px}
+.nav-services>li:hover.s-menu-sed, .nav-services>li.s-menu-sed.active { background-position: -271px -952px}
 
 .nav-services>li:hover {
     background-color: #e31e25;
@@ -606,7 +609,9 @@ li.nav-logo{
 .service-container > div{
     display: none
 }
-
+.service-container{
+    width: 80%;
+}
 .nav-services>li:hover span, .nav-services>li>a:hover span {
     color: #fff
 }
@@ -703,12 +708,15 @@ li.nav-logo{
     margin-right: -30px
 }
 
+.lpm-content{
+    background-image: url("../img/content-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .testimonials {
-    background: url(../img/content-bg-2.jpg) no-repeat top center;
-    background-size: 100%;
     width: 100%;
-    margin-top: -194px;
-    background-position: 0 192px;
+    margin-top: -194px; 
 }
 .t-grid {
     position: relative;
