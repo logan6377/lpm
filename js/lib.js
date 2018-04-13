@@ -4,7 +4,7 @@ $(window).on('beforeunload', function(){
 
   var total_images = $("body img").length;
   var images_loaded = 0;
-
+ 
   $(document).ready(function(){
 
     $("body").find('img').each(function() {
