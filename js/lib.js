@@ -2,11 +2,14 @@ $(window).on('beforeunload', function(){
     $(window).scrollTop(0);
   }); 
 
+  var total_images = $("body img").length;
+  var images_loaded = 0;
+
   $(document).ready(function(){
 
     $("body").find('img').each(function() {
         var fakeSrc = $(this).attr('src');
-        $("<img/>").attr("src", fakeSrc).css('display', 'none').load(function() {
+        $("<img/>").attr("src", fakeSrc).on('load',function() {
             images_loaded++;
             if (images_loaded >= total_images) {
                 // now all images are loaded.
@@ -104,102 +107,5 @@ $(window).on('beforeunload', function(){
     });     
   });
  
-
-    (function($) {
-
-    jQuery.scrollSpeed = function(step, speed, easing) {
-        
-        var $document = $(document),
-            $window = $(window),
-            $body = $('html, body'),
-            option = easing || 'default',
-            root = 0,
-            scroll = false,
-            scrollY,
-            scrollX,
-            view;
-            
-        if (window.navigator.msPointerEnabled)
-        
-            return false;
-            
-        $window.on('mousewheel DOMMouseScroll', function(e) {
-
-            
-            
-            var deltaY = e.originalEvent.wheelDeltaY,
-                detail = e.originalEvent.detail;
-                scrollY = $document.height() > $window.height();
-                scrollX = $document.width() > $window.width();
-                scroll = true;
-            
-            if (scrollY) {
-                
-                view = $window.height();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.height() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollTop: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            if (scrollX) {
-                
-                view = $window.width();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.width() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollLeft: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            return false;
-            
-        }).on('scroll', function() {
-            
-            if (scrollY && !scroll) root = $window.scrollTop();
-            if (scrollX && !scroll) root = $window.scrollLeft();
-
-            
-            
-        }).on('resize', function() {
-            
-            if (scrollY && !scroll) view = $window.height();
-            if (scrollX && !scroll) view = $window.width();
-            
-        });       
-    };
-
-    jQuery.easing.default = function (x,t,b,c,d) {
-
-        return -c * ((t=t/d-1)*t*t*t - 1) + b;
-    };
-
-    })(jQuery); 
+ 
 
