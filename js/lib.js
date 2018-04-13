@@ -27,7 +27,7 @@ $(window).on('beforeunload', function(){
 
                 var intro = function(){
                     var screenright = $(window).width()-$('.pagewrap').width();
-                    $('nav').css('right',screenright/2+'px');
+                    //$('nav').css('right',screenright/2+'px');
 
                     var testi = $('[testi-slide]').height();
                     $('.testimonials').css('margin-top',-testi+'px')
