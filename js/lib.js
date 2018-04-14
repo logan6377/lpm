@@ -104,6 +104,18 @@ $(window).on('beforeunload', function(){
                   $(this).addClass('active')
                   $('.service-container > div').hide();
                   $('.service-container > div.'+current).show();
+              });
+
+
+              var inst = $('[data-remodal-id=forms-modal]').remodal(); 
+              
+              inst.open();
+
+              $('.get-appointment').click(function(){
+                inst.open();
+                //    inst.close();
+                //    inst.getState();
+                //    inst.destroy();
               })
             }
         });

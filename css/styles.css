@@ -477,6 +477,7 @@ li.nav-logo{
     width: 73%;
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
 }
 .call-text {
     background: #000;
@@ -854,6 +855,11 @@ li.nav-logo{
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
+}
+
+
+.remodal {
+    max-width: 900px;
 }
 
 /*===============================================
